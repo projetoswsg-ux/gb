@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+    <title>G&J Representações | Cartão de Visita Digital - Gerson Bezerra</title>
+
+
+        <link rel="icon" type="image/png" sizes="64x64" href="https://i.postimg.cc/05FHg7bS/Creative-Modern-Business-Card.png">
+    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/05FHg7bS/Creative-Modern-Business-Card.png">
+    
+    <!-- META TAGS PARA COMPARTILHAMENTO EM REDES SOCIAIS (WhatsApp, Facebook, etc) -->
+    <meta property="og:title" content="G&J Representações | Cartão de Visita - Gerson Bezerra">
+    <meta property="og:description" content="Representante comercial com mais de +30 anos de mercado atendendo Bauru, Ourinhos, Assis e região.">
+    <meta property="og:image" content="https://i.postimg.cc/05FHg7bS/Creative-Modern-Business-Card.png">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="G&J Representações | Cartão de Visita - Gerson Bezerra">
+    <meta name="twitter:description" content="Representante comercial. Clique para falar com Gerson Bezerra">
+    <meta name="twitter:image" content="https://i.postimg.cc/05FHg7bS/Creative-Modern-Business-Card.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Google Fonts -->
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a2f44 0%, #0a1f2e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+
+        /* Cores baseadas na logo: azul principal, branco, dourado */
+        :root {
+            --azul-logo: #0A2F44;
+            --azul-escuro: #051e2c;
+            --branco: #FFFFFF;
+            --dourado: #C7A83A;
+            --dourado-hover: #DFC475;
+        }
+
+        .card-container {
+            max-width: 540px;
+            width: 100%;
+            animation: fadeInUp 0.5s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Cartão principal */
+        .digital-card {
+            background: var(--azul-logo);
+            border-radius: 42px;
+            overflow: hidden;
+            box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.25s ease;
+        }
+
+        .digital-card:hover {
+            transform: scale(1.01);
+        }
+
+        /* BANNER BRANCO com a logo no meio */
+        .banner-branco {
+            background: var(--branco);
+            padding: 32px 26px 27px;
+            text-align: center;
+            border-bottom: 3px solid var(--dourado);
+        }
+
+        .logo-img-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.1));
+        }
+
+        .years-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(199, 168, 58, 0.12);
+            border: 1px solid var(--dourado);
+            padding: 6px 16px;
+            border-radius: 60px;
+            margin-top: 16px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--dourado);
+        }
+
+        /* Informações do representante */
+        .info-area {
+            background: var(--azul-logo);
+            padding: 28px 24px 35px;
+            text-align: center;
+        }
+
+        /* Foto do representante */
+        .foto-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: -60px;
+            margin-bottom: 18px;
+        }
+
+        .foto-representante {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--dourado);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            background: var(--branco);
+        }
+
+        .nome {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--branco);
+            margin-bottom: 6px;
+            word-break: break-word;
+        }
+
+        .cargo {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--dourado);
+            background: rgba(199, 168, 58, 0.15);
+            display: inline-block;
+            padding: 5px 18px;
+            border-radius: 50px;
+            margin-bottom: 28px;
+        }
+
+        /* Lista de contatos */
+        .contato-lista {
+            text-align: left;
+            margin: 20px 0 28px;
+            background: var(--azul-escuro);
+            border-radius: 28px;
+            padding: 8px 16px;
+        }
+
+        .contato-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 14px 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .contato-item:last-child {
+            border-bottom: none;
+        }
+
+        .contato-item:hover {
+            background: rgba(199, 168, 58, 0.1);
+            border-radius: 20px;
+            padding-left: 18px;
+        }
+
+        .contato-icon {
+            width: 46px;
+            height: 46px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dourado);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .contato-detalhe {
+            flex: 1;
+        }
+
+        .contato-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: rgba(255,255,255,0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .contato-valor {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--branco);
+            word-break: break-all;
+        }
+
+        /* Botão FAZER PEDIDO */
+        .btn-pedido {
+            background: var(--dourado);
+            color: var(--azul-logo);
+            border: none;
+            padding: 13px 20px;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+            text-decoration: none;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        .btn-pedido:hover {
+            background: var(--dourado-hover);
+            transform: scale(0.98);
+        }
+
+        /* Botões de ação lado a lado */
+        .acoes {
+            display: flex;
+            gap: 14px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-wpp {
+            background: #25D366;
+            color: white;
+            border: none;
+            padding: 13px 20px;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+            text-decoration: none;
+            flex: 1;
+            justify-content: center;
+            min-width: 140px;
+        }
+
+        .btn-wpp:hover {
+            background: #128C7E;
+            transform: scale(0.97);
+        }
+
+        .btn-share {
+            background: var(--dourado);
+            color: var(--azul-logo);
+            border: none;
+            padding: 13px 20px;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+            flex: 1;
+            justify-content: center;
+            min-width: 140px;
+        }
+
+        .btn-share:hover {
+            background: var(--dourado-hover);
+            transform: scale(0.97);
+        }
+
+        /* Rodapé */
+        .footer-card {
+            background: var(--azul-escuro);
+            text-align: center;
+            padding: 14px;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.5);
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        /* Toast de notificação */
+        .toast-message {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--dourado);
+            color: var(--azul-logo);
+            padding: 10px 24px;
+            border-radius: 60px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            animation: fadeInOut 2s ease forwards;
+            white-space: nowrap;
+        }
+
+        @keyframes fadeInOut {
+            0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+            15% { opacity: 1; transform: translateX(-50%) translateY(0); }
+            85% { opacity: 1; transform: translateX(-50%) translateY(0); }
+            100% { opacity: 0; transform: translateX(-50%) translateY(20px); visibility: hidden; }
+        }
+
+        /* RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS */
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+            
+            .digital-card {
+                border-radius: 32px;
+            }
+            
+            .nome {
+                font-size: 1.4rem;
+            }
+            
+            .logo-img {
+                max-width: 100%;
+            }
+            
+            .banner-branco {
+                padding: 20px 16px 18px;
+            }
+            
+            .info-area {
+                padding: 24px 16px 30px;
+            }
+            
+            .foto-representante {
+                width: 90px;
+                height: 90px;
+            }
+            
+            .foto-wrapper {
+                margin-top: -50px;
+            }
+            
+            .cargo {
+                font-size: 0.75rem;
+                padding: 4px 14px;
+            }
+            
+            .contato-lista {
+                padding: 4px 12px;
+                margin: 16px 0 20px;
+            }
+            
+            .contato-item {
+                padding: 10px 8px;
+                gap: 12px;
+            }
+            
+            .contato-icon {
+                width: 38px;
+                height: 38px;
+                font-size: 1rem;
+            }
+            
+            .contato-valor {
+                font-size: 0.85rem;
+            }
+            
+            .btn-pedido, .btn-wpp, .btn-share {
+                padding: 11px 16px;
+                font-size: 0.85rem;
+            }
+            
+            .acoes {
+                gap: 10px;
+            }
+            
+            .footer-card {
+                font-size: 0.6rem;
+                padding: 12px;
+            }
+            
+            .toast-message {
+                font-size: 0.7rem;
+                white-space: nowrap;
+                bottom: 20px;
+            }
+        }
+
+        /* Ajustes para telas muito pequenas (350px) */
+        @media (max-width: 380px) {
+            .nome {
+                font-size: 1.2rem;
+            }
+            
+            .btn-wpp, .btn-share {
+                min-width: 120px;
+                font-size: 0.75rem;
+            }
+            
+            .contato-valor {
+                font-size: 0.75rem;
+            }
+            
+            .logo-img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="digital-card">
+            <!-- BANNER BRANCO com a logo no meio -->
+            <div class="banner-branco">
+                <div class="logo-img-wrapper">
+                    <img src="https://i.postimg.cc/t4LhJgt4/1000398002-removebg-preview-(1).png" 
+                         alt="Logo G&J Representações" 
+                         class="logo-img"
+                         loading="eager"
+                         onerror="this.onerror=null; this.parentElement.innerHTML='<div style=\'background:#0A2F44; padding:12px 20px; border-radius:60px; display:inline-block\'><span style=\'color:#C7A83A; font-weight:800; font-size:2rem;\'>G&amp;J</span> <span style=\'color:white;\'>REPRESENTAÇÕES</span></div>'">
+                </div>
+                <div class="years-badge">
+                    <i class="fas fa-medal"></i> Excelência em atendimento
+                    <i class="fas fa-medal"></i>
+                </div>
+            </div>
+
+            <!-- Informações do representante com FOTO -->
+            <div class="info-area">
+                <div class="foto-wrapper">
+                    <img src="https://i.postimg.cc/fWX1R3cV/IMG-20260424-WA0198.jpg" 
+                         alt="Gerson Bezerra - Representante comercial" 
+                         class="foto-representante"
+                         loading="eager"
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/110?text=GJ'">
+                </div>
+                <div class="nome">Gerson Bezerra</div>
+                <div class="cargo">
+                    <i class="fas fa-briefcase"></i> Representante comercial
+                </div>
+
+                <div class="contato-lista">
+                    <!-- Telefone - ABRE LIGAÇÃO -->
+                    <a href="tel:+5514997111462" class="contato-item" style="text-decoration: none;">
+                        <div class="contato-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contato-detalhe">
+                            <div class="contato-label">Telefone</div>
+                            <div class="contato-valor">(14) 99711-1462</div>
+                        </div>
+                    </a>
+                    
+                    <!-- E-mail - ABRE E-MAIL -->
+                    <a href="mailto:gersonjunior@gmail.com" class="contato-item" style="text-decoration: none;">
+                        <div class="contato-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contato-detalhe">
+                            <div class="contato-label">E-mail</div>
+                            <div class="contato-valor">gersonbezerra@gmail.com</div>
+                        </div>
+                    </a>
+
+
+
+                       <!-- pedido -->
+                    <a href="https://wa.me/5514997111462?text=Olá%20Gerson!%20Gostaria%20de%20fazer%20um%20pedido%20e%20saber%20mais%20sobre%20os%20produtos%20da%20G%26J%20Representações." class="contato-item" style="text-decoration: none;">
+                        <div class="contato-icon"><i class="fa-solid fa-cart-plus"></i></div>
+                        <div class="contato-detalhe">
+                            <div class="contato-label">Fazer pedido</div>
+                            <div class="contato-valor">Adicionar produto para entrega</div>
+                        </div>
+                    </a>
+
+
+            
+                    
+                </div>
+
+           </a>
+
+                
+              
+                <!-- Botões de ação lado a lado -->
+                <div class="acoes">
+                    <a href="https://wa.me/5514997111462?text=Olá%20Gerson,%20vim%20pelo%20cartão%20digital%20da%20G%26J%20Representações!" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn-wpp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <button class="btn-share" id="shareBtn">
+                        <i class="fas fa-share-alt"></i> Compartilhar
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer-card">
+
+
+<!-- Opção 2: Frase completa "Feito com ❤ por Horda" -->
+<p style="text-align: center; margin-top: 18px; font-size: 0.7rem; color: rgba(255,255,255,0.6);">
+    Feito com ❤ por 
+    <a href="https://wa.me/5521973901989?text=Olá!%20Horda%20gostaria%20de%20mais%20informações!%20sobre%20cartão%20digital%20" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       style="text-decoration: none; color: #C7A83A; font-weight: 600;">
+       Horda
+    </a>
+</p> 
+                
+            </div>
+
+    <script>
+        // Função para mostrar toast
+        function showToast(message) {
+            const existingToast = document.querySelector('.toast-message');
+            if(existingToast) existingToast.remove();
+            
+            const toast = document.createElement('div');
+            toast.className = 'toast-message';
+            toast.innerHTML = `<i class="fas fa-check-circle"></i> ${message}`;
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                if(toast) toast.remove();
+            }, 2000);
+        }
+
+        // Função para obter os dados do perfil (para compartilhar)
+        function getProfileData() {
+            return `*G&J Representações* 📝
+
+👤 *Gerson Bezerra*
+
+📲 Clique no link para falar conosco:
+` ;
+        }
+
+        // Botão COMPARTILHAR
+        const shareBtn = document.getElementById('shareBtn');
+        
+        shareBtn.addEventListener('click', async () => {
+            // URL atual para compartilhar
+            const currentUrl = window.location.href;
+            
+            const shareData = {
+                title: 'G&J Representações - Cartão de Visita',
+                text: getProfileData(),
+                url: currentUrl
+            };
+            
+            // Verifica se o navegador suporta a Web Share API
+            if (navigator.share) {
+                try {
+                    await navigator.share(shareData);
+                    showToast('Compartilhado com sucesso!');
+                } catch (err) {
+                    if (err.name !== 'AbortError') {
+                        fallbackShare();
+                    }
+                }
+            } else {
+                // Fallback para navegadores que não suportam share
+                fallbackShare();
+            }
+        });
+        
+        function fallbackShare() {
+            const textToCopy = getProfileData() + '\n\n🔗 Link: ' + window.location.href;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast('Perfil copiado! Cole e compartilhe onde quiser.');
+            }).catch(() => {
+                alert("Copie manualmente: " + getProfileData());
+            });
+        }
+
+        // Ajusta a meta tag OG URL dinamicamente
+        const metaOgUrl = document.querySelector('meta[property="og:url"]');
+        if (metaOgUrl) {
+            metaOgUrl.setAttribute('content', window.location.href);
+        }
+    </script>
+</body>
+</html>
